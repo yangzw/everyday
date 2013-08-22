@@ -1,10 +1,10 @@
-//¸÷ÖÖÅÅĞòËã·¨
-//Ã°Åİ£¬Ñ¡Ôñ£¬ ²åÈë£¬Ï£¶û£¬¿ìËÙ,¹é²¢¡¢¶Ñ¡¢»ùÊıÅÅĞò
+//Â¸Ã·Ã–Ã–Ã…Ã…ÃÃ²Ã‹Ã£Â·Â¨
+//ÃƒÂ°Ã…ÃÂ£Â¬Ã‘Â¡Ã”Ã±Â£Â¬ Â²Ã¥ÃˆÃ«Â£Â¬ÃÂ£Â¶Ã»Â£Â¬Â¿Ã¬Ã‹Ã™,Â¹Ã©Â²Â¢Â¡Â¢Â¶Ã‘Â¡Â¢Â»Ã¹ÃŠÃ½Ã…Ã…ÃÃ²
 #include <iostream>
 
 using namespace std;
 
-//½»»»ÔªËØ
+//Â½Â»Â»Â»Ã”ÂªÃ‹Ã˜
 void swp(int &a, int &b)
 {
     int tmp = a;
@@ -12,14 +12,14 @@ void swp(int &a, int &b)
     b = tmp;
 }
 
-//´òÓ¡Êı×é
+//Â´Ã²Ã“Â¡ÃŠÃ½Ã—Ã©
 void print(int* array, int size)
 {
     for (int i = 0; i < size; i++)
         cout << array[i] << " ";
     cout << endl;
 }
-//Ã°ÅİÅÅĞò,Ê±¼ä¸´ÔÓ¶Èo(n*n)£¬ÎÈ¶¨ÅÅĞò
+//ÃƒÂ°Ã…ÃÃ…Ã…ÃÃ²,ÃŠÂ±Â¼Ã¤Â¸Â´Ã”Ã“Â¶Ãˆo(n*n)Â£Â¬ÃÃˆÂ¶Â¨Ã…Ã…ÃÃ²
 void bubllesort(int* array, int size)
 {
     int i(0), j(0);
@@ -32,7 +32,7 @@ void bubllesort(int* array, int size)
         }
     }
 }
-//Ö±½Ó²åÈëÅÅĞò£¬Ê±¼ä¸´ÔÓ¶È×î»µo(n*n)£¬×îºÃÊÇo(n),ÎÈ¶¨ÅÅĞò
+//Ã–Â±Â½Ã“Â²Ã¥ÃˆÃ«Ã…Ã…ÃÃ²Â£Â¬ÃŠÂ±Â¼Ã¤Â¸Â´Ã”Ã“Â¶ÃˆÃ—Ã®Â»Âµo(n*n)Â£Â¬Ã—Ã®ÂºÃƒÃŠÃ‡o(n),ÃÃˆÂ¶Â¨Ã…Ã…ÃÃ²
 void insertsort(int* array, int size)
 {
     int i(0), j(0);
@@ -48,7 +48,7 @@ void insertsort(int* array, int size)
         }
     }
 }
-//Ñ¡ÔñÅÅĞò,Ê±¼ä¸´ÔÓ¶ÈÊÇo(n*n)£¬²»ÎÈ¶¨µÄÅÅĞò
+//Ã‘Â¡Ã”Ã±Ã…Ã…ÃÃ²,ÃŠÂ±Â¼Ã¤Â¸Â´Ã”Ã“Â¶ÃˆÃŠÃ‡o(n*n)Â£Â¬Â²Â»ÃÃˆÂ¶Â¨ÂµÃ„Ã…Ã…ÃÃ²
 void selectsort(int* array, int size)
 {
     int i(0), j(0);
@@ -70,8 +70,8 @@ void selectsort(int* array, int size)
     }
 }
 
-//Ï£¶ûÅÅĞò,²»ÎÈ¶¨µÄÅÅĞò
-void shellpass(int* array, int increase, int size)//¶ÔÃ¿Ò»¸öĞ¡×é½øĞĞ²åÈëÅÅĞò
+//ÃÂ£Â¶Ã»Ã…Ã…ÃÃ²,Â²Â»ÃÃˆÂ¶Â¨ÂµÃ„Ã…Ã…ÃÃ²
+void shellpass(int* array, int increase, int size)//Â¶Ã”ÃƒÂ¿Ã’Â»Â¸Ã¶ÃÂ¡Ã—Ã©Â½Ã¸ÃÃÂ²Ã¥ÃˆÃ«Ã…Ã…ÃÃ²
 {
     int i(0), j(0);
     for (i = increase; i < size ; i+= increase)
@@ -97,11 +97,11 @@ void shellsort(int* array, int n)
     while(increase > 1);
 }
 
-/*¿ìËÙÅÅĞò,×î»µÇé¿öÊ±¼ä¸´ÔÓ¶Èo(n*n) ¿Õ¼ä¸´ÔÓ¶ÈO(n)£¬
-×îºÃÊ±¼ä¸´ÔÓ¶ÈO(n log n)¿Õ¼ä¸´ÔÓ¶ÈO(log n),²»ÎÈ¶¨µÄÅÅĞò*/
+/*Â¿Ã¬Ã‹Ã™Ã…Ã…ÃÃ²,Ã—Ã®Â»ÂµÃ‡Ã©Â¿Ã¶ÃŠÂ±Â¼Ã¤Â¸Â´Ã”Ã“Â¶Ãˆo(n*n) Â¿Ã•Â¼Ã¤Â¸Â´Ã”Ã“Â¶ÃˆO(n)Â£Â¬
+Ã—Ã®ÂºÃƒÃŠÂ±Â¼Ã¤Â¸Â´Ã”Ã“Â¶ÃˆO(n log n)Â¿Ã•Â¼Ã¤Â¸Â´Ã”Ã“Â¶ÃˆO(log n),Â²Â»ÃÃˆÂ¶Â¨ÂµÃ„Ã…Ã…ÃÃ²*/
 int dividearray(int* array, int lt, int rt)
 {
-    /*Ñ¡Ôñ»ùÊı²»ÎªrÊ±,pivotIndex¿ÉÒÔÑ¡ÔñÉú³ÉËæ»úÊı£¬»òÕß¿ÉÒÔÑ¡Ôñl+(r - l)/2
+    /*Ã‘Â¡Ã”Ã±Â»Ã¹ÃŠÃ½Â²Â»ÃÂªrÃŠÂ±,pivotIndexÂ¿Ã‰Ã’Ã”Ã‘Â¡Ã”Ã±Ã‰ÃºÂ³Ã‰Ã‹Ã¦Â»ÃºÃŠÃ½Â£Â¬Â»Ã²Ã•ÃŸÂ¿Ã‰Ã’Ã”Ã‘Â¡Ã”Ã±l+(r - l)/2
     get pivotIndex which >= l, and <= r
     swp(array[r], array[pivotIndex]);
     */
@@ -127,13 +127,13 @@ void quicksort(int* array, int lt, int rt)
     }
 }
 
-/*¹é²¢ÅÅĞò£¬Ê±¼ä¸´ÔÓ¶È¾ùÎªO(n log n)£¬¿Õ¼ä¸´ÔÓ¶ÈÎªO(n)
-Ò²¿ÉÒÔÍ¬¹ıÖ±½Ó²åÈëÅÅĞòÀ´»ñµÃÓĞĞòµÄ×ÓĞòÁĞ£¬ÔÙÀ´Á½Á½¹é²¢£¬ÎÈ¶¨ÅÅĞò*/
-void merge(int* array, int l, int m, int r)//ºÏ²¢Á½¸öÓĞĞòÊı×é
+/*Â¹Ã©Â²Â¢Ã…Ã…ÃÃ²Â£Â¬ÃŠÂ±Â¼Ã¤Â¸Â´Ã”Ã“Â¶ÃˆÂ¾Ã¹ÃÂªO(n log n)Â£Â¬Â¿Ã•Â¼Ã¤Â¸Â´Ã”Ã“Â¶ÃˆÃÂªO(n)
+Ã’Â²Â¿Ã‰Ã’Ã”ÃÂ¬Â¹Ã½Ã–Â±Â½Ã“Â²Ã¥ÃˆÃ«Ã…Ã…ÃÃ²Ã€Â´Â»Ã±ÂµÃƒÃ“ÃÃÃ²ÂµÃ„Ã—Ã“ÃÃ²ÃÃÂ£Â¬Ã”Ã™Ã€Â´ÃÂ½ÃÂ½Â¹Ã©Â²Â¢Â£Â¬ÃÃˆÂ¶Â¨Ã…Ã…ÃÃ²*/
+void merge(int* array, int l, int m, int r)//ÂºÃÂ²Â¢ÃÂ½Â¸Ã¶Ã“ÃÃÃ²ÃŠÃ½Ã—Ã©
 {
     int i(0), j(0);
     int left_number = m - l + 1;
-    int* tmparray = new int [r - l + 1];//½«Ô­À´µÄÊı×é¸´ÖÆµ½ÁÙÊ±Êı×é
+    int* tmparray = new int [r - l + 1];//Â½Â«Ã”Â­Ã€Â´ÂµÃ„ÃŠÃ½Ã—Ã©Â¸Â´Ã–Ã†ÂµÂ½ÃÃ™ÃŠÂ±ÃŠÃ½Ã—Ã©
     for(i = 0; i < r-l+1; i++)
         tmparray[i] = array[l+i];
     int p = l;
@@ -144,39 +144,39 @@ void merge(int* array, int l, int m, int r)//ºÏ²¢Á½¸öÓĞĞòÊı×é
         else
             array[p] = tmparray[i++];
     }
-    //µ±×ó»òÕßÓÒÊı×é»¹ÓĞÊ£ÓàÊ±
+    //ÂµÂ±Ã—Ã³Â»Ã²Ã•ÃŸÃ“Ã’ÃŠÃ½Ã—Ã©Â»Â¹Ã“ÃÃŠÂ£Ã“Ã ÃŠÂ±
     while(i < left_number)
         array[p++] = tmparray[i++];
     while(j <= r-l)
         array[p++] = tmparray[j++];
     delete [] tmparray;
 }
-void mergesort(int* array, int lft, int rgt)//·ÖÖÎ·¨£¬×Ô¶¥ÏòÏÂ¹é²¢
+void mergesort(int* array, int lft, int rgt)//Â·Ã–Ã–ÃÂ·Â¨Â£Â¬Ã—Ã”Â¶Â¥ÃÃ²ÃÃ‚Â¹Ã©Â²Â¢
 {
     if(lft < rgt)
     {
         int middle = (rgt - lft)/2 + lft;
-        mergesort(array, lft, middle);//ÏÈ×óÓÒÅÅĞò
+        mergesort(array, lft, middle);//ÃÃˆÃ—Ã³Ã“Ã’Ã…Ã…ÃÃ²
         mergesort(array, middle+1, rgt);
-        merge(array, lft, middle, rgt);//ÔÙ¹é²¢
+        merge(array, lft, middle, rgt);//Ã”Ã™Â¹Ã©Â²Â¢
     }
 }
 
-//¶ÑÅÅĞò,ÀûÓÃ´ó¸ù¶Ñ¡£Ê±¼ä¸´ÔÓ¶È¾ùÎªO(n log n)£¬¾ÍµØÅÅĞò£¬²»ÎÈ¶¨ÅÅĞò
-void shift_down(int* array, int i, int heap_size)//ÏòÏÂµ÷Õû£¬±£³Ö¸ùµÄĞÔÖÊ
+//Â¶Ã‘Ã…Ã…ÃÃ²,Ã€Ã»Ã“ÃƒÂ´Ã³Â¸Ã¹Â¶Ã‘Â¡Â£ÃŠÂ±Â¼Ã¤Â¸Â´Ã”Ã“Â¶ÃˆÂ¾Ã¹ÃÂªO(n log n)Â£Â¬Â¾ÃÂµÃ˜Ã…Ã…ÃÃ²Â£Â¬Â²Â»ÃÃˆÂ¶Â¨Ã…Ã…ÃÃ²
+void shift_down(int* array, int i, int heap_size)//ÃÃ²ÃÃ‚ÂµÃ·Ã•Ã»Â£Â¬Â±Â£Â³Ã–Â¸Ã¹ÂµÃ„ÃÃ”Ã–ÃŠ
 {
     int l = 2*i + 1;
     while(l < heap_size)
     {
-        if(l+1 < heap_size && array[l+1] > array[l])//µ±ÓÒ×ÓÊ÷±È×ó×ÓÊ÷´óÊ±
+        if(l+1 < heap_size && array[l+1] > array[l])//ÂµÂ±Ã“Ã’Ã—Ã“ÃŠÃ·Â±ÃˆÃ—Ã³Ã—Ã“ÃŠÃ·Â´Ã³ÃŠÂ±
             l++;
-        if(array[l] > array[i])//Èç¹û×Ó±È¸¸´ó
+        if(array[l] > array[i])//ÃˆÃ§Â¹Ã»Ã—Ã“Â±ÃˆÂ¸Â¸Â´Ã³
             swp(array[i], array[l]);
         i = l;
         l = l*2 + 1;
     }
 }
-void buildheap(int* array, int heap_size)//½¨¶Ñ
+void buildheap(int* array, int heap_size)//Â½Â¨Â¶Ã‘
 {
     for(int i = heap_size / 2 - 1; i >= 0; i--)
         shift_down(array, i, heap_size);
@@ -192,31 +192,108 @@ void heapsort(int* array, int array_size)
     }
 }
 
-//»ùÊıÅÅĞò£¬Ê±¼ä¸´ÔÓ¶Èo(n)£¬ÎÈ¶¨ÅÅĞò
+//Â»Ã¹ÃŠÃ½Ã…Ã…ÃÃ²Â£Â¬ÃŠÂ±Â¼Ã¤Â¸Â´Ã”Ã“Â¶Ãˆo(n)Â£Â¬ÃÃˆÂ¶Â¨Ã…Ã…ÃÃ²
 void radixsort(int* array, int array_size)
 {
+}
+
+
+void find_min(int * array, int array_size)
+{
+    int min = 0,i;
+    for(i = 0;i <array_size;i++)
+    {
+        if(array[i] < min)
+        {
+            min = array[i];
+        }
+    }
+    return min;
+}
+
+void find_max(int * array, int array_size)
+{
+    int max = 0,i;
+    for(i = 0;i <array_size;i++)
+    {
+        if(array[i] > max)
+        {
+            max = array[i];
+        }
+    }
+    return max;
+}
+
+//count sort,stableï¼ŒO(n), when  range is small
+void countsort(int*array, int array_size)
+{
+    int min = find_min(array,array_size);
+    int max = find_max(array,array_size);
+    int range = max  - min + 1;
+    int c[range],b[array_size];
+    int i;
+    for(i = 0;i < range;i++)
+    {
+        c[i] = 0;
+    }
+    for(i = 0;i < array_size;i++)
+    {
+        b[i] = array[i];
+    }
+    for(i =0;i < array_size;i++)
+    {
+        c[array[i] - min] += 1;
+    }
+    for(i = 1;i < range;i++)
+    {
+        c[i] += c[i-1];
+    }
+    for(i = array_size - 1;i > 0;i--)
+    {
+        array[c[b[i]-min] - 1] = b[i];
+        c[b[i] - min]--;
+    }
+}
+
+//select the ith element
+int Randomized_select(int* array, int l, int r, int i)
+{
+	if (l == r)
+	{
+		return array[l];
+	}
+	int q; 
+	q = dividearray(array,l,r);
+    int k = q - l + 1;
+    if(i == k)
+        return a[q];
+    else if(i < k)
+        return Randomized_select(array,l,q-1,i);
+    else
+        return Randomized_select(array,q+1,r,i-k);
 }
 
 int main()
 {
     int n;
-    cout << "ÊäÈëÊıµÄ¸öÊı" << endl;
+    cout << "ÃŠÃ¤ÃˆÃ«ÃŠÃ½ÂµÃ„Â¸Ã¶ÃŠÃ½" << endl;
     cin >> n;
     int array[n];
-    cout << "ÊäÈëÊı×é"<< endl;
+    cout << "ÃŠÃ¤ÃˆÃ«ÃŠÃ½Ã—Ã©"<< endl;
     for (int i = 0; i < n; i++)
         cin >> array[i];
-    cout << "ÅÅĞòÇ°£º" << endl;
+    cout << "Ã…Ã…ÃÃ²Ã‡Â°Â£Âº" << endl;
     print(array, n);
-    //bubllesort(array, n);//Ã°ÅİÅÅĞò
-    insertsort(array, n);//²åÈëÅÅĞò
-    //shellsort(array, n);//Ï£¶ûÅÅĞò
-    //selectsort(array, n);//Ñ¡ÔñÅÅĞò
-    //quicksort(array, 0, n-1);//¿ìËÙÅÅĞò
-    //mergesort(array, 0, n-1);//¹é²¢ÅÅĞò
-    //heapsort(array, n);//¶ÑÅÅĞò
-    //radixsort(array, n);//»ùÊıÅÅĞò
-    cout << "ÅÅĞòºó£º"<< endl;
+    //bubllesort(array, n);//ÃƒÂ°Ã…ÃÃ…Ã…ÃÃ²
+    //insertsort(array, n);//Â²Ã¥ÃˆÃ«Ã…Ã…ÃÃ²
+    //shellsort(array, n);//ÃÂ£Â¶Ã»Ã…Ã…ÃÃ²
+    //selectsort(array, n);//Ã‘Â¡Ã”Ã±Ã…Ã…ÃÃ²
+    //quicksort(array, 0, n-1);//Â¿Ã¬Ã‹Ã™Ã…Ã…ÃÃ²
+    //mergesort(array, 0, n-1);//Â¹Ã©Â²Â¢Ã…Ã…ÃÃ²
+    //heapsort(array, n);//Â¶Ã‘Ã…Ã…ÃÃ²
+    //radixsort(array, n);//Â»Ã¹ÃŠÃ½Ã…Ã…ÃÃ²
+	//countsort(array,n)
+    cout << "Ã…Ã…ÃÃ²ÂºÃ³Â£Âº"<< endl;
     print(array, n);
     return 0;
 }
