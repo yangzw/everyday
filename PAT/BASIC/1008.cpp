@@ -6,12 +6,12 @@ void rotate(int* array,int begin,int end)
 	int tmp;
 	while(begin < end)
 	{
-		tmp = array[end];
-		array[end] = array[begin];
-		array[begin] = tmp;
-		begin++;
-		end--;
-	}
+			tmp = array[end];
+			array[end] = array[begin];
+			array[begin] = tmp;
+			begin++;
+			end--;
+		}
 }
 
 int main()
